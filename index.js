@@ -3,10 +3,11 @@ const Tesseract = require('tesseract.js');
 
 async function extractAadhaarNumber(imagePath) {
     try {
+        
         // Process the image using Sharp (optional, depending on your use case)
         const processedImage = await sharp(imagePath)
             .grayscale()
-            
+
             .toBuffer();
 
         // Use Tesseract.js to perform OCR on the processed image
