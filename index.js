@@ -6,6 +6,7 @@ async function extractAadhaarNumber(imagePath) {
         // Process the image using Sharp (optional, depending on your use case)
         const processedImage = await sharp(imagePath)
             .grayscale()
+            
             .toBuffer();
 
         // Use Tesseract.js to perform OCR on the processed image
