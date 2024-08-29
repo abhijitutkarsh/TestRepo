@@ -26,6 +26,8 @@ async function extractAadhaarNumber(imagePath) {
     } catch (error) {
         console.error('Error extracting Aadhaar number:', error);
         throw error;
+        
+
     }
 }
 
